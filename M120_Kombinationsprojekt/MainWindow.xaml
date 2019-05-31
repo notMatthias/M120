@@ -53,7 +53,36 @@
                                 <Label Content="Details" FontSize="16"></Label>
                             </Grid>
                             <Grid Grid.Row="1">
-                                
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30*"/>
+                                    <ColumnDefinition Width="70*"/>
+                                    <ColumnDefinition Width="139.2"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Label Content="Name:"></Label>
+                                <Label Grid.Column="1" Content="Muster"></Label>
+                                <Button Grid.Column="2" Content="Bearbeiten"></Button>
+
+                                <Label Grid.Row="1" Content="Vorname:"></Label>
+                                <Label Grid.Row="1" Grid.Column="1" Content="Hans"></Label>
+                                <Button Grid.Row="1" Grid.Column="2" Content="Löschen"></Button>
+                                <!--<Grid.RowDefinitions>
+                                        <RowDefinition Height="31.2"/>
+                                        <RowDefinition Height="31.2"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Margin="5">
+                                        <Button Content="Bearbeiten"></Button>
+                                    </Grid>
+                                    <Grid Grid.Row="1" Margin="5">
+                                        <Button Content="Löschen"></Button>
+                                    </Grid>-->
                             </Grid>
                         </Grid>
                         <GridSplitter Grid.Row="1" Height="4" HorizontalAlignment="Stretch"></GridSplitter>
