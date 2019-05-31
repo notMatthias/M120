@@ -1,11 +1,11 @@
-﻿<Window x:Class="M120_Kombinationsprojekt.CustomerDialog"
+﻿<Window x:Class="M120_Kombinationsprojekt.InventoryDialog"
 		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:local="clr-namespace:M120_Kombinationsprojekt"
 		mc:Ignorable="d"
-		Title="CustomerDialog" Height="280" Width="300" ResizeMode="NoResize">
+		Title="Inventar" Height="280" Width="300" ResizeMode="NoResize">
 	<Grid Margin="10">
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="89" />
@@ -19,14 +19,16 @@
 			<RowDefinition Height="Auto" />
 			<RowDefinition Height="*" />
 		</Grid.RowDefinitions>
-		<Label>Artikelnummer</Label>
-		<TextBox Grid.Column="1" IsReadOnly="True" Margin="0,5" />
-		<Label Grid.Row="1">Bezeichnung</Label>
+		<Label>Vorname</Label>
+		<TextBox Grid.Column="1" Margin="0,5" />
+		<Label Grid.Row="1">Nachname</Label>
 		<TextBox Grid.Row="1" Grid.Column="1" Margin="0,5" />
-		<Label Grid.Row="2">Kategorie</Label>
+		<Label Grid.Row="2">Adresse</Label>
 		<TextBox Grid.Row="2" Grid.Column="1" Margin="0,5" />
-		<Label Grid.Row="3">Lagerbestand</Label>
+		<Label Grid.Row="3">Wohnort</Label>
 		<TextBox Grid.Row="3" Grid.Column="1" Margin="0,5" />
+		<Label Grid.Row="4">PLZ</Label>
+		<TextBox Grid.Row="4" Grid.Column="1" Margin="0,5" />
 		<Button Background="#4f92ff" Foreground="White" VerticalAlignment="Bottom" Grid.Row="5">Abbrechen</Button>
 		<Button Background="#4f92ff" Foreground="White" VerticalAlignment="Bottom" Grid.Row="5" Grid.Column="1" Width="89" HorizontalAlignment="Left" Margin="10,0,0,0">Speichern</Button>
 	</Grid>
