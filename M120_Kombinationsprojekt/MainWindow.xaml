@@ -23,12 +23,12 @@
                     </Grid.ColumnDefinitions>
                     <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="36"/>
+                            <RowDefinition Height="36.2"/>
                             <RowDefinition Height="70*"/>
-                            <RowDefinition Height="36"/>
+                            <RowDefinition Height="36.2"/>
                         </Grid.RowDefinitions>
-                        <Grid>
-                            <Label Content="Alle Kunden"></Label>
+                        <Grid Margin="3">
+                            <Label Content="Alle Kunden" FontSize="16"></Label>
                         </Grid>
                         <Grid Grid.Row="1">
                             <ListBox></ListBox>
@@ -45,7 +45,16 @@
                             <RowDefinition Height="40*"/>
                         </Grid.RowDefinitions>
                         <Grid>
-
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="32.8"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid>
+                                <Label Content="Details" FontSize="16"></Label>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                
+                            </Grid>
                         </Grid>
                         <GridSplitter Grid.Row="1" Height="4" HorizontalAlignment="Stretch"></GridSplitter>
                         <Grid Grid.Row="2">
@@ -53,15 +62,15 @@
                                 <RowDefinition Height="32.8"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-                            <Grid Margin="3">
+                            <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition/>
                                     <ColumnDefinition Width="139.2"/>
                                 </Grid.ColumnDefinitions>
                                 <Grid>
-                                    <Label Content="Zugehörige Bestellung" Grid.ColumnSpan="2" Margin="0,0,0.4,-0.2"></Label>
+                                    <Label Content="Zugehörige Bestellung" Grid.ColumnSpan="2" Margin="0,0,0.4,-0.2" FontSize="16"></Label>
                                 </Grid>
-                                <Grid Grid.Column="1">
+                                <Grid Grid.Column="1" Margin="5">
                                     <Button Content="Bestellung erfassen"></Button>
                                 </Grid>
                             </Grid>
