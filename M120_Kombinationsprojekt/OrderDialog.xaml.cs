@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace M120_Kombinationsprojekt
 {
     /// <summary>
-    /// Interaktionslogik für CustomerDialog.xaml
+    /// Interaktionslogik für OrderDialog.xaml
     /// </summary>
-    public partial class InventoryDialog : Window
+    public partial class OrderDialog : Window
     {
-        public InventoryDialog()
+        public OrderDialog()
         {
             InitializeComponent();
         }
