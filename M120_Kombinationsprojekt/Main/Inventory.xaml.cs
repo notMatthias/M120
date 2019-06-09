@@ -13,17 +13,26 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace M120_Kombinationsprojekt
+namespace M120_Kombinationsprojekt.Main
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für Customer.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Inventory : Page
     {
-        public MainWindow()
+        public Inventory()
         {
-            
             InitializeComponent();
+        }
+        private void Customer_Click(object sender, RoutedEventArgs e)
+        {
+            var edit = new CustomerDialog();
+            edit.ShowDialog();
+        }
+        private void Order_Click(object sender, RoutedEventArgs e)
+        {
+            var order = new OrderDialog();
+            order.ShowDialog();
         }
     }
 }

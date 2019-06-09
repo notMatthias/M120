@@ -15,106 +15,13 @@
         </Grid.RowDefinitions>
         <TabControl>
             <TabItem Header="Kunden">
-                <Grid Background="#FFE5E5E5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40*"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="60*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="36.2"/>
-                            <RowDefinition Height="70*"/>
-                            <RowDefinition Height="36.2"/>
-                        </Grid.RowDefinitions>
-                        <Grid Margin="3">
-                            <Label Content="Alle Kunden" FontSize="16"></Label>
-                        </Grid>
-                        <Grid Grid.Row="1">
-                            <ListBox></ListBox>
-                        </Grid>
-                        <Grid Grid.Row="2">
-                            <Button Margin="5" Content="Kunde erfassen" Background="#4f92ff" Foreground="White"></Button>
-                        </Grid>
-                    </Grid>
-                    <GridSplitter Grid.Column="1" Width="4" ResizeBehavior="PreviousAndNext"></GridSplitter>
-                    <Grid Grid.Column="2">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="60*"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="40*"/>
-                        </Grid.RowDefinitions>
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="32.8"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <Grid>
-                                <Label Content="Details" FontSize="16"></Label>
-                            </Grid>
-                            <Grid Grid.Row="1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="30*"/>
-                                    <ColumnDefinition Width="70*"/>
-                                    <ColumnDefinition Width="139.2"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="*"/>
-                                </Grid.RowDefinitions>
-                                <Label Content="Name:"></Label>
-                                <Label Grid.Column="1" Content="Muster"></Label>
-                                <Button Grid.Column="2" Content="Bearbeiten"></Button>
-
-                                <Label Grid.Row="1" Content="Vorname:"></Label>
-                                <Label Grid.Row="1" Grid.Column="1" Content="Hans"></Label>
-                                <Button Grid.Row="1" Grid.Column="2" Content="Löschen"></Button>
-                                <!--<Grid.RowDefinitions>
-                                        <RowDefinition Height="31.2"/>
-                                        <RowDefinition Height="31.2"/>
-                                        <RowDefinition Height="*"/>
-                                    </Grid.RowDefinitions>
-                                    <Grid Margin="5">
-                                        <Button Content="Bearbeiten"></Button>
-                                    </Grid>
-                                    <Grid Grid.Row="1" Margin="5">
-                                        <Button Content="Löschen"></Button>
-                                    </Grid>-->
-                            </Grid>
-                        </Grid>
-                        <GridSplitter Grid.Row="1" Height="4" HorizontalAlignment="Stretch"></GridSplitter>
-                        <Grid Grid.Row="2">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="32.8"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition/>
-                                    <ColumnDefinition Width="139.2"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid>
-                                    <Label Content="Zugehörige Bestellung" Grid.ColumnSpan="2" Margin="0,0,0.4,-0.2" FontSize="16"></Label>
-                                </Grid>
-                                <Grid Grid.Column="1" Margin="5">
-                                    <Button Content="Bestellung erfassen"></Button>
-                                </Grid>
-                            </Grid>
-                            <Grid Grid.Row="1">
-                                <ListBox></ListBox>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                </Grid>
+                <Frame Source="Main/Customer.xaml"></Frame>
             </TabItem>
             <TabItem Header="Inventar">
-                <Grid Background="#FFE5E5E5"/>
+                <Frame Source="Main/Inventory.xaml"></Frame>
             </TabItem>
             <TabItem Header="Bestellung">
-                <Grid Background="#FFE5E5E5"/>
+                <Frame Source="Main/Order.xaml"></Frame>
             </TabItem>
         </TabControl>
 
