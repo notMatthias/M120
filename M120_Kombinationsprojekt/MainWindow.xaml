@@ -20,7 +20,7 @@
             <TabItem Header="Inventar">
                 <Frame Source="Main/Inventory.xaml"></Frame>
             </TabItem>
-            <TabItem Header="Bestellung">
+            <TabItem Header="Bestellung" IsSelected="True">
                 <Frame Source="Main/Order.xaml"></Frame>
             </TabItem>
         </TabControl>

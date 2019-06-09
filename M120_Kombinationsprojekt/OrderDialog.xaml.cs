@@ -23,5 +23,9 @@ namespace M120_Kombinationsprojekt
         {
             InitializeComponent();
         }
+        private void Accept_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = true;
+        }
     }
 }

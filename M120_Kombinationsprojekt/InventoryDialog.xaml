@@ -5,7 +5,7 @@
 		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:local="clr-namespace:M120_Kombinationsprojekt"
 		mc:Ignorable="d"
-		Title="Inventar" Height="280" Width="300" ResizeMode="NoResize">
+		Title="Artikel bearbeiten/erfassen" Height="280" Width="300" ResizeMode="NoResize">
 	<Grid Margin="10">
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="89" />
@@ -15,21 +15,18 @@
 			<RowDefinition Height="Auto" />
 			<RowDefinition Height="Auto" />
 			<RowDefinition Height="Auto" />
-			<RowDefinition Height="Auto" />
-			<RowDefinition Height="Auto" />
-			<RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
 		</Grid.RowDefinitions>
-		<Label>Vorname</Label>
+		<Label>Artikelnummer</Label>
 		<TextBox Grid.Column="1" Margin="0,5" />
-		<Label Grid.Row="1">Nachname</Label>
+		<Label Grid.Row="1">Bezeichnung</Label>
 		<TextBox Grid.Row="1" Grid.Column="1" Margin="0,5" />
-		<Label Grid.Row="2">Adresse</Label>
-		<TextBox Grid.Row="2" Grid.Column="1" Margin="0,5" />
-		<Label Grid.Row="3">Wohnort</Label>
+		<Label Grid.Row="2">Kategorie</Label>
+		<ComboBox Grid.Row="2" Grid.Column="1" Margin="0,2.5" />
+        <Label Grid.Row="3">Lagerbestand</Label>
 		<TextBox Grid.Row="3" Grid.Column="1" Margin="0,5" />
-		<Label Grid.Row="4">PLZ</Label>
-		<TextBox Grid.Row="4" Grid.Column="1" Margin="0,5" />
-		<Button Background="#4f92ff" Foreground="White" VerticalAlignment="Bottom" Grid.Row="5">Abbrechen</Button>
-		<Button Background="#4f92ff" Foreground="White" VerticalAlignment="Bottom" Grid.Row="5" Grid.Column="1" Width="89" HorizontalAlignment="Left" Margin="10,0,0,0">Speichern</Button>
+		<Button Background="#4f92ff" Foreground="White" IsCancel="True" VerticalAlignment="Bottom" Grid.Row="5">Abbrechen</Button>
+        <Button Background="#4f92ff" Foreground="White" IsDefault="True" Click="Accept_Click"  VerticalAlignment="Bottom" Grid.Row="5" Grid.Column="1" Width="89" HorizontalAlignment="Left" Margin="10,0,0,0">Speichern</Button>
 	</Grid>
 </Window>

@@ -21,19 +21,18 @@
                 <RowDefinition Height="36.2"/>
             </Grid.RowDefinitions>
             <Grid Margin="3">
-                <Label Content="Alle Produkte" FontSize="16"></Label>
+                <Label Content="Alle Produkte" FontSize="16"/>
             </Grid>
-            <Frame Grid.Row="1" Source="SharedTreeView.xaml"></Frame>
+            <Frame Grid.Row="1" Source="/SharedTreeView.xaml"></Frame>
             <Grid Grid.Row="2">
-                <Button Margin="5" Content="Kunde erfassen" Background="#4f92ff" Foreground="White" Click="Customer_Click"></Button>
+                <Button Margin="5" Content="Kunde erfassen" Background="#4f92ff" Foreground="White" Click="Customer_Click"/>
             </Grid>
         </Grid>
         <GridSplitter Grid.Column="1" Width="4" ResizeBehavior="PreviousAndNext"></GridSplitter>
         <Grid Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="60*"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="40*"/>
+                <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
             <Grid>
                 <Grid.RowDefinitions>
@@ -41,7 +40,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid>
-                    <Label Content="Details" FontSize="16"></Label>
+                    <Label Content="Details" FontSize="16"/>
                 </Grid>
                 <Grid Grid.Row="1">
                     <Grid.ColumnDefinitions>
@@ -56,42 +55,22 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Label Content="Artikelnummer"></Label>
-                    <Label Grid.Column="1" Content="Muster"></Label>
-                    <Button Grid.Column="2" Content="Bearbeiten" Click="Customer_Click"></Button>
+                    <Label Content="Artikelnummer"/>
+                    <Label Grid.Column="1" Content="00001"/>
+                    <Button Grid.Column="2" Content="Bearbeiten" Margin="5,2.5" Click="Inventory_Click"/>
 
-                    <Label Grid.Row="1" Content="Bezeichnung"></Label>
-                    <Label Grid.Row="1" Grid.Column="1" Content="Hans"></Label>
+                    <Label Grid.Row="1" Content="Bezeichnung"/>
+                    <Label Grid.Row="1" Grid.Column="1" Content="Apfel"/>
+                    <Button Grid.Row="1" Grid.Column="2" Margin="5,2.5" Content="Löschen"/>
 
-                    <Label Grid.Row="2" Content="Kategorie"></Label>
-                    <Label Grid.Row="2" Grid.Column="1" Content="Früchte"></Label>
+                    <Label Grid.Row="2" Content="Kategorie" />
+                    <Label Grid.Row="2" Grid.Column="1" Content="Früchte" />
 
-                    <Label Grid.Row="3" Content="Lagerbestand"></Label>
-                    <Label Grid.Row="3" Grid.Column="1" Content="33"></Label>
+                    <Label Grid.Row="3" Content="Lagerbestand"/>
+                    <Label Grid.Row="3" Grid.Column="1" Content="33"/>
                 </Grid>
             </Grid>
-            <GridSplitter Grid.Row="1" Height="4" HorizontalAlignment="Stretch"></GridSplitter>
-            <Grid Grid.Row="2">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid>
-                        <Label Content="Zugehörige Bestellung" Grid.ColumnSpan="2" Margin="0,0,0.4,-0.2" FontSize="16"></Label>
-                    </Grid>
-                    <Grid Grid.Column="1" Margin="5">
-                        <Button Content="Bestellung erfassen" Click="Order_Click"></Button>
-                    </Grid>
-                </Grid>
-                <Grid Grid.Row="1">
-                    <ListBox></ListBox>
-                </Grid>
-            </Grid>
+            <Button Grid.Row="1" Width="250" Margin="0,5" Content="Bestellung erfassen" Click="Order_Click"/>
         </Grid>
     </Grid>
 </Page>

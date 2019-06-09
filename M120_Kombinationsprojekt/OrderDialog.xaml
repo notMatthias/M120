@@ -5,7 +5,7 @@
 		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:local="clr-namespace:M120_Kombinationsprojekt"
 		mc:Ignorable="d"
-		Title="Bestellung" Height="280" Width="300" ResizeMode="NoResize">
+		Title="Bestellung bearbeiten/erfassen" Height="280" Width="300" ResizeMode="NoResize">
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="89" />
@@ -23,8 +23,8 @@
         <Frame Grid.Row="1" Grid.Column="1" Name="frame" Source="SharedTreeView.xaml" Margin="0,5"/>
         <Label Grid.Row="2">Menge</Label>
         <TextBox Grid.Row="2" Grid.Column="2" Margin="0,5"/>
-        <Button Background="#4f92ff" Foreground="White" VerticalAlignment="Bottom" Grid.Row="3">Abbrechen</Button>
-        <Button Background="#4f92ff" Foreground="White" VerticalAlignment="Bottom" Grid.Row="3" Grid.Column="1" Width="89" HorizontalAlignment="Left" Margin="10,0,0,0">Speichern</Button>
+        <Button Background="#4f92ff" Foreground="White" IsCancel="True" VerticalAlignment="Bottom" Grid.Row="5">Abbrechen</Button>
+        <Button Background="#4f92ff" Foreground="White" IsDefault="True" Click="Accept_Click"  VerticalAlignment="Bottom" Grid.Row="5" Grid.Column="1" Width="89" HorizontalAlignment="Left" Margin="10,0,0,0">Speichern</Button>
     </Grid>
     
 </Window>

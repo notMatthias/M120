@@ -18,9 +18,9 @@ namespace M120_Kombinationsprojekt.Main
     /// <summary>
     /// Interaktionslogik für Customer.xaml
     /// </summary>
-    public partial class Inventory : Page
+    public partial class Order : Page
     {
-        public Inventory()
+        public Order()
         {
             InitializeComponent();
         }
