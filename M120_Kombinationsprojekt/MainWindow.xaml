@@ -13,6 +13,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
         <TabControl>
             <TabItem Header="Kunden">
                 <Frame Source="Main/Customer.xaml"></Frame>
@@ -24,6 +25,7 @@
                 <Frame Source="Main/Order.xaml"></Frame>
             </TabItem>
         </TabControl>
-
+        <Label HorizontalAlignment="Right" Margin="0,0,150,0" Height="22" VerticalAlignment="Top" Padding="5,2,5,0">Suche</Label>
+        <TextBox HorizontalAlignment="Right" Width="150" Height="20" VerticalAlignment="Top" Margin="0,1,2,1" Padding="0" />
     </Grid>
 </Window>
