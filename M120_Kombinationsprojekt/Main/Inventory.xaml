@@ -10,9 +10,9 @@
 
     <Grid Background="#FFE5E5E5">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*" MinWidth="200"/>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*" MinWidth="300"/>
         </Grid.ColumnDefinitions>
         <Grid>
             <Grid.RowDefinitions>
@@ -20,9 +20,7 @@
                 <RowDefinition Height="70*"/>
                 <RowDefinition Height="36.2"/>
             </Grid.RowDefinitions>
-            <Grid Margin="3">
-                <Label Content="Alle Produkte" FontSize="16"/>
-            </Grid>
+            <Label Margin="3,-2,3,3" Content="Alle Artikel" FontSize="16"/>
             <Frame Grid.Row="1" Source="/SharedTreeView.xaml"></Frame>
             <Grid Grid.Row="2">
                 <Button Margin="5" Content="Kunde erfassen" Background="#4f92ff" Foreground="White" Click="Customer_Click"/>
@@ -37,12 +35,12 @@
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="32.8"/>
+                    <RowDefinition Height="Auto" />
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Grid>
-                    <Label Content="Details" FontSize="16"/>
-                </Grid>
-                <Grid Grid.Row="1">
+                <Label Margin="3,-2,3,3" Content="Details" FontSize="16"/>
+                <Separator Grid.Row="1"/>
+                <Grid Grid.Row="2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="30*"/>
                         <ColumnDefinition Width="70*"/>

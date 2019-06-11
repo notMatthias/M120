@@ -6,27 +6,33 @@
 		xmlns:local="clr-namespace:M120_Kombinationsprojekt"
 		mc:Ignorable="d"
 		Title="Artikel bearbeiten/erfassen" Height="280" Width="300" ResizeMode="NoResize">
-	<Grid Margin="10">
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="89" />
-			<ColumnDefinition Width="*" />
-		</Grid.ColumnDefinitions>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto" />
-			<RowDefinition Height="Auto" />
-			<RowDefinition Height="Auto" />
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="89" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
-		</Grid.RowDefinitions>
-		<Label>Artikelnummer</Label>
-		<TextBox Grid.Column="1" Margin="0,5" />
-		<Label Grid.Row="1">Bezeichnung</Label>
-		<TextBox Grid.Row="1" Grid.Column="1" Margin="0,5" />
-		<Label Grid.Row="2">Kategorie</Label>
-		<ComboBox Grid.Row="2" Grid.Column="1" Margin="0,2.5" />
+        </Grid.RowDefinitions>
+        <Label>Artikelnummer</Label>
+        <TextBox Grid.Column="1" Margin="0,5" IsEnabled="False" />
+        <Label Grid.Row="1">Bezeichnung</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="0,5" />
+        <Label Grid.Row="2">Kategorie</Label>
+        <ComboBox Grid.Row="2" Grid.Column="1" Margin="0,2.5" />
         <Label Grid.Row="3">Lagerbestand</Label>
-		<TextBox Grid.Row="3" Grid.Column="1" Margin="0,5" />
-		<Button Background="#4f92ff" Foreground="White" IsCancel="True" VerticalAlignment="Bottom" Grid.Row="5">Abbrechen</Button>
-        <Button Background="#4f92ff" Foreground="White" IsDefault="True" Click="Accept_Click"  VerticalAlignment="Bottom" Grid.Row="5" Grid.Column="1" Width="89" HorizontalAlignment="Left" Margin="10,0,0,0">Speichern</Button>
-	</Grid>
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="0,5" />
+        <Grid Grid.Row="4" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Background="#4f92ff" Foreground="White" IsCancel="True" VerticalAlignment="Bottom" Margin="10,0">Abbrechen</Button>
+            <Button Background="#4f92ff" Foreground="White" IsDefault="True" Grid.Column="1" Click="Accept_Click" VerticalAlignment="Bottom" Margin="10,0">Speichern</Button>
+        </Grid>
+    </Grid>
 </Window>
