@@ -20,7 +20,7 @@
 			<RowDefinition Height="*" />
 		</Grid.RowDefinitions>
 		<Label>Name</Label>
-		<TextBox Grid.Column="1" IsReadOnly="True" Margin="0,5" />
+		<TextBox Grid.Column="1" Margin="0,5" />
         <Label Grid.Row="1">Vorname</Label>
 		<TextBox Grid.Row="1" Grid.Column="1" Margin="0,5" />
 		<Label Grid.Row="2">Adresse</Label>
@@ -34,7 +34,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Background="#4f92ff" Foreground="White" IsCancel="True" VerticalAlignment="Bottom" Margin="10,0">Abbrechen</Button>
+            <Button IsCancel="True" VerticalAlignment="Bottom" Margin="10,0">Abbrechen</Button>
             <Button Background="#4f92ff" Foreground="White" IsDefault="True" Grid.Column="1" Click="Accept_Click" VerticalAlignment="Bottom" Margin="10,0">Speichern</Button>
         </Grid>
     </Grid>

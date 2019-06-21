@@ -31,7 +31,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Background="#4f92ff" Foreground="White" IsCancel="True" VerticalAlignment="Bottom" Margin="10,0">Abbrechen</Button>
+            <Button IsCancel="True" VerticalAlignment="Bottom" Margin="10,0">Abbrechen</Button>
             <Button Background="#4f92ff" Foreground="White" IsDefault="True" Grid.Column="1" Click="Accept_Click" VerticalAlignment="Bottom" Margin="10,0">Speichern</Button>
         </Grid>
     </Grid>

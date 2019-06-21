@@ -3,9 +3,10 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:dotNetKitControls="clr-namespace:DotNetKit.Windows.Controls;assembly=DotNetKit.Wpf.AutoCompleteComboBox"
 		xmlns:local="clr-namespace:M120_Kombinationsprojekt"
 		mc:Ignorable="d"
-		Title="Bestellung bearbeiten/erfassen" Height="280" Width="300">
+		Title="Bestellung bearbeiten/erfassen" Height="280" Width="300" MinHeight="280" MinWidth="300">
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="89" />
@@ -18,7 +19,11 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Label>Kunde</Label>
-        <ComboBox Grid.Column="1" Margin="0,5" />
+        <dotNetKitControls:AutoCompleteComboBox Grid.Column="1" Margin="0,5">
+            <ListBoxItem>Max Mustermann</ListBoxItem>
+            <ListBoxItem>John Cena</ListBoxItem>
+        </dotNetKitControls:AutoCompleteComboBox>
+        <!--<TextBox Grid.Column="1" Margin="0,5" />-->
         <Label Grid.Row="1">Produkt</Label>
         <Frame Grid.Row="1" Grid.Column="1" Name="frame" Source="SharedTreeView.xaml" Margin="0,5"/>
         <Label Grid.Row="2">Menge</Label>
@@ -28,7 +33,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Background="#4f92ff" Foreground="White" IsCancel="True" VerticalAlignment="Bottom" Margin="10,0">Abbrechen</Button>
+            <Button IsCancel="True" VerticalAlignment="Bottom" Margin="10,0">Abbrechen</Button>
             <Button Background="#4f92ff" Foreground="White" IsDefault="True" Grid.Column="1" Click="Accept_Click" VerticalAlignment="Bottom" Margin="10,0">Speichern</Button>
         </Grid>
     </Grid>

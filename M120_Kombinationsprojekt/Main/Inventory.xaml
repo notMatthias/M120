@@ -4,7 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:M120_Kombinationsprojekt.Main"
-      mc:Ignorable="d" 
+      mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Customer">
 
@@ -12,7 +12,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="40*" MinWidth="200"/>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="60*" MinWidth="300"/>
+            <ColumnDefinition Width="60*" MinWidth="450"/>
         </Grid.ColumnDefinitions>
         <Grid>
             <Grid.RowDefinitions>
@@ -23,14 +23,14 @@
             <Label Margin="3,-2,3,3" Content="Alle Artikel" FontSize="16"/>
             <Frame Grid.Row="1" Source="/SharedTreeView.xaml"></Frame>
             <Grid Grid.Row="2">
-                <Button Margin="5" Content="Kunde erfassen" Background="#4f92ff" Foreground="White" Click="Customer_Click"/>
+                <Button Margin="5" Content="Artikel erfassen" Background="#4f92ff" Foreground="White" Click="Inventory_Click"/>
             </Grid>
         </Grid>
         <GridSplitter Grid.Column="1" Width="4" ResizeBehavior="PreviousAndNext"></GridSplitter>
         <Grid Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="60*"/>
-                <RowDefinition Height="5*"/>
+                <RowDefinition Height="35"/>
             </Grid.RowDefinitions>
             <Grid>
                 <Grid.RowDefinitions>
@@ -47,10 +47,10 @@
                         <ColumnDefinition Width="139.2"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="26"/>
+                        <RowDefinition Height="26"/>
+                        <RowDefinition Height="26"/>
+                        <RowDefinition Height="26"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Label Content="Artikelnummer"/>
@@ -68,7 +68,7 @@
                     <Label Grid.Row="3" Grid.Column="1" Content="33"/>
                 </Grid>
             </Grid>
-            <Button Grid.Row="1" Width="250" Margin="0,5" Content="Bestellung erfassen" Click="Order_Click"/>
+            <Button Grid.Row="1" Width="250" Margin="0,4.5" Content="Bestellung erfassen" Click="Order_Click"/>
         </Grid>
     </Grid>
 </Page>
